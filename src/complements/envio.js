@@ -27,9 +27,9 @@ for (let number of numbers) {
 }
 // Ejemplo de uso
 export async function recordatorio() {
-    const base_url = "http://localhost:3008/v1";
+    const base_url = "https://banqi-bot-production.up.railway.app/v1";
     const message_url = `${base_url}/messages`;
-    const numbers = [""];
+    const numbers = ["573008268737"];
     const message = "Este es un recordatorio!";
     send_message(message_url, numbers, message);
     // await setTimeout(() => {
@@ -49,3 +49,4 @@ export async function recordatorio() {
 // const name = "Sebastian";
 // await register(register_url, number, name);
 }
+recordatorio()

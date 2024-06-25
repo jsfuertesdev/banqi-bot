@@ -42,7 +42,7 @@ const Amountbanqi = addKeyword<Provider, Database>('3').addAnswer(`Tu saldo actu
     })
 
 
-const welcomeFlow = addKeyword<Provider, Database>(['hi', 'hello', 'hola', 'hola banqui'])
+const welcomeFlow = addKeyword<Provider, Database>(['frasesecretainadivinable'])
     .addAnswer(`🙌 Hola bienvenido a banqi!! en que te puedo ayudar el dia de hoy`)
     .addAnswer(
         [
@@ -95,7 +95,7 @@ const fullSamplesFlow = addKeyword<Provider, Database>(['samples', utils.setEven
     })
 
 const main = async () => {
-    const adapterFlow = createFlow([welcomeFlow, registerbanqi, fullSamplesFlow])
+    const adapterFlow = createFlow([welcomeFlow])
     
     const adapterProvider = createProvider(Provider)
     const adapterDB = new Database()
