@@ -14,7 +14,9 @@
   "dependencies": {
     "@builderbot/bot": "1.1.6",
     "@builderbot/provider-baileys": "1.1.6",
-    "sharp": "^0.33.4"
+    "@google-cloud/bigquery": "^7.9.0",
+    "dotenv": "^16.4.5",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
