@@ -22,6 +22,9 @@ FROM node:21-alpine3.18 as deploy
 
 WORKDIR /app
 
+VOLUME /app/bot_sessions
+VOLUME /app/assets
+
 ARG PORT
 ENV PORT $PORT
 EXPOSE $PORT
